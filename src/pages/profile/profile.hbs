@@ -1,0 +1,21 @@
+{{{sectionLeft}}}  
+<div class="profile-form profile-container">
+  <img src="./static/avatar.png">
+  <h1>{{name}}</h1>
+  <div class="form__inputs">
+    {{#each infos}}
+      {{{this}}}
+    {{/each}}
+  </div>
+  <div class="form__buttons">
+    {{#if isInEditMode}} 
+      {{{btn}}} 
+    {{else}}
+      {{#each links}}
+      <p class="underlined container_with_padding">
+        {{{this}}}
+      </p>
+      {{/each}}
+    {{/if}}
+  </div>
+</div>

@@ -1,0 +1,18 @@
+     
+        <form class="form login-signup-form login">
+          <h1>{{#if isLogin}} Welcome {{else}} Create an account {{/if}}</h1>
+          {{!-- <p class="form__label">Email</p>
+          <input type="text" class="form__text-input form__username-input"/>       --}}
+          <div class="form__inputs">
+            {{#each inputs}}
+              {{{this}}}
+            {{/each}}
+          </div>
+          {{!-- <p class="form__label">Password</p>
+          <input type="password" class="form__text-input form__password-input"/> --}}
+          <div class="form__buttons">
+            {{{btn}}}
+            {{{link}}}
+          </div>
+      </form> 
+
