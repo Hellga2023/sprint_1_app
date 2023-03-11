@@ -1,0 +1,23 @@
+.input_container{
+    text-align: left;
+}
+
+.input_container label {
+    color: #999999;
+    font-size: 0.7em;
+}
+
+.input_container input {
+    border-bottom: 1px solid #3369F3;
+    padding: 0.4em 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+}
+
+.input_container input:focus{
+    outline: none;
+}
+
+
