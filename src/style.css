@@ -1,95 +1,33 @@
+@font-face {
+    font-family: Inter;
+    src: url(../static/Inter-VariableFont_slnt,wght.ttf);
+} 
+
 #content{
     display: flex;
     justify-content: center;
     font-family: Inter;  
     color: #1E1E1E;
-}
-
-@font-face {
-    font-family: Inter;
-    src: url(../static/Inter-VariableFont_slnt,wght.ttf);
-}     
+}    
 
 *, *:before, *:after {
     box-sizing: border-box;
-} 
-
-
-.content{
-  
-  text-align: center;
-}
-.form{        
-  
-  min-height: 30em;
-  padding: 2em;     
 }
 
-.login-signup-form{
-    width: 22em;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
-    border-radius: 12px;
-}
-
-.profile-container{
-    width: 40em;
-}
-
-
-.content h1{
+.header{
     font-size: 1.5em;
     font-weight: normal;
-}
-
-/* .form__label{
-  color: #999999;    
-  text-align: left;
-  font-size: 0.7em; 
-  margin-bottom: 0;
-} */
-
-.form__buttons{
-    padding-top: 10em;
-}
-
-.form-inputs{
-    display: flex;
-}
-.info-container{
-    border-bottom: 1px solid #eaeaea;
-    display: flex; 
-    align-items: center; 
-    gap: 2em; 
-    justify-content: space-between; 
-
+    text-align: center;
 }
 
 .error{
     color: #FF2F2F;
 }
 
-.profile-container .form__reset{
+.underlined{
     border-bottom: 1px solid #eaeaea;
+}
+
+.text_left{
     text-align: left;
-    padding-bottom: 0.5em;
-}
-
-.section-back{
-    background-color: #FBFBFB;
-    border-right: 1px solid #EAEAEA;
-    display: flex;
-    align-items: center;
-}
-
-.section-back .button{
-    background-image: url("../static/arrowLeft.png");
-    width: 56px;
-    height: 56px;
-    border: none;
-    margin: 0 3em;
-}
-
-
-.part{
-    border-bottom: 1px solid #EAEAEA;
 }
