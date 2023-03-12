@@ -1,5 +1,4 @@
-.info-container {
-    border-bottom: 1px solid #eaeaea;
+.info-line {
     display: flex;
     align-items: center;
     gap: 2em;
@@ -7,16 +6,16 @@
     font-size: 1em;
 } 
 
-.info-container .info__label {    
+.info-line__label {    
     width: 50%;
     margin-bottom: 0;
     text-align: left;
-    padding: 0.5em 0;
+    padding: 1em 0; /*todo create mixin*/
 }
 
-.info-container .form__text-input {
+.info-line__input {
     border: none;
-    padding: 0.5em 0;
+    padding: 1em 0;
     display: block;
     text-align: right;
     width: 100%;
@@ -25,10 +24,6 @@
     font-size: 1em;
 }
 
-.info-container .form__text-input:focus{
+.info-line__input:focus{
     outline: none;
-}
-
-.container_with_padding{
-    padding: 0 1em;
 }

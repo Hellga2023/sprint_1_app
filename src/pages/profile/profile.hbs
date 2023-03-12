@@ -1,20 +1,18 @@
 {{{sectionLeft}}}  
-<div class="profile-form profile-container">
+<div class="profile-container">
   <img src="{{avatarUrl}}">
-  <h1>{{name}}</h1>
-  <div class="form__inputs">
+  <h1 class="header">{{name}}</h1>
+  <div class="profile-container__info">
     {{#each infos}}
       {{{this}}}
     {{/each}}
   </div>
-  <div class="form__buttons">
+  <div class="{{class_}}">
     {{#if isInEditMode}} 
       {{{btn}}} 
     {{else}}
       {{#each links}}
-      <p class="underlined container_with_padding">
         {{{this}}}
-      </p>
       {{/each}}
     {{/if}}
   </div>

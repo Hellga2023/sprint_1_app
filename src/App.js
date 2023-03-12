@@ -2,6 +2,7 @@ import {Auth} from './pages/auth/auth.js';
 import {Profile} from './pages/profile/profile.js';
 import {Main} from './pages/main/main.js';
 import {Chat} from './pages/chat/chat.js';
+import {Error} from './pages/error/error.js';
 
 const data = {
     loginPage: {
@@ -61,7 +62,9 @@ const data = {
         case '/editprofile': 
             data.profilePage.isProfileInEditMode = true;
             return Profile(data.profilePage);
-        default: return Main();
-        
+        case '/chat': return Chat(data.chatPage);
+        case '/404': return Error({code: "404"});
+        case '/500': return Error({code: "500"});
+        default: return Main();        
     }
  }

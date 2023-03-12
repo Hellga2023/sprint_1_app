@@ -10,10 +10,11 @@
   background-color: #e7e0e0;
 }
 
-.section-left .button_nav_left{
+.section-left__button{
     width: 56px;
     height: 56px;
     border: none;
     margin: 0 3em;
     cursor: pointer;
+    background-image: url(../../../static/arrowLeft.png);
 }
