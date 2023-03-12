@@ -4,6 +4,7 @@ import {Button} from '../../components/button/button';
 import {Link} from '../../components/link/link';
 import {Info} from '../../components/profile_info_line/profile_info_line';
 import {SectionLeft} from '../../components/section_nav_left/section_nav_left';
+import avatarImg from '../../../static/avatar.png';
 import './profile.css';
 
 export const Profile = (data)=> {
@@ -19,7 +20,8 @@ export const Profile = (data)=> {
         name: data.user.name,
         isInEditMode: data.isProfileInEditMode, 
         infos: infoTemplates,
-        sectionLeft: SectionLeft()
+        sectionLeft: SectionLeft(),
+        avatarUrl: avatarImg
     };
     
 
