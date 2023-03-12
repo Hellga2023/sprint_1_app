@@ -13,7 +13,6 @@
 .section-left .button_nav_left{
     width: 56px;
     height: 56px;
-    background-image: url("http://localhost:4000/static/arrowLeft.png");
     border: none;
     margin: 0 3em;
     cursor: pointer;
