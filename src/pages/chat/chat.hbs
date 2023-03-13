@@ -1,14 +1,16 @@
-<div>
-  <div class="leftMenu">
-    <a href="/profile">Profile ></a>
-    <input type="search"/>
-    </div>
+ <div class="leftMenu">
+  <div>
+    {{{link}}}
+    <input type="search" class="search" placeholder="Search"/>
+  </div>
+  <div>
       {{#each chat_items}}
         {{{this}}}
       {{/each}} 
-    </div>
   </div>
+</div>
   <div class="message_content">
- 
+    <p>Please select chat to send the message</p>    
   </div>
+</div>
 
